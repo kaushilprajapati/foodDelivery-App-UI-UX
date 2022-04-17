@@ -352,8 +352,7 @@ header{
                             h2 {
                                 color: black;
                             }
-                            
-                            a {
+                            button{
                                 text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
                                 color: #ff3838;
                                 text-decoration: none

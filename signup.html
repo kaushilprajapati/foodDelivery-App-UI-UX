@@ -8,7 +8,6 @@
     <title>Eatery</title>
     <link rel="stylesheet" href="css/LoginSignUp.css">
 </head>
-
 <body>
     <header>
         <a href="index.html" class="logo">Eatery</a>
@@ -27,19 +26,16 @@
       </header>
     <div class="mainSign">
         <p class="sign">SignUp</p>
-        <form class="form1">
-            <input class="Name" type="text" placeholder="Name">
-            <input class="un " type="text" placeholder="Username">
-            <input class="Email" type="text" placeholder="Email">
-            <input class="pass" type="password" placeholder="Password">
-            <input class="Conpass" type="password" placeholder="ConfirmPassword">
-            <a class="submit" href="index.html">SignUp</a>
-
-
-
-
+        <form class="form1" id="signup">
+            <input class="Name" type="text" placeholder="Name" id="name" required>
+            <input class="un " type="text" placeholder="Username" id="username" required>
+            <input class="Email" type="text" placeholder="Email" id="email" required>
+            <input class="pass" type="password" placeholder="Password" id="pw" required>
+            <input class="Conpass" type="password" placeholder="Confirm-Password" id="cpw" required>
+            <input type="button" value="Register" class="submit" onclick="store()">
+            <br/><br/>
+            <input type="button" value="Clear All" class="submit" onclick="clearAll()">
     </div>
-
 </body>
-
+  <script src="js/signup.js"></script>
 </html>
