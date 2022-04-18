@@ -1,8 +1,8 @@
-let menu = document.querySelector("#menu-bar");
+let menu = document.querySelector("#barcontainer");
 let navbar = document.querySelector(".navbar");
 
 menu.onclick = () =>{
-  navbar.classList.toggle("active")
+  navbar.classList.toggle("change")
 }
 
 function store(){

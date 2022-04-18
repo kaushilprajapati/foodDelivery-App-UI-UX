@@ -519,6 +519,17 @@ header #menu-bar{
   header #menu-bar{
     display: initial;
   }
+  header .barcontainer {
+    display: inline-block;
+    cursor: pointer;
+  }
+  header .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
   header .navbar{
     position: absolute;
     top: 100%;left: 0;right: 0;
@@ -526,7 +537,7 @@ header #menu-bar{
     border: .1rem solid rgba(0, 0, 0, 0.1);
     clip-path: polygon( 0 0 , 100% 0  , 100% 0 , 0 0);
   }
-  header .navbar.active{
+  header .navbar.change{
     clip-path: polygon( 0 0 , 100% 0  , 100% 100% , 0% 100%);
   }
   header .navbar a{
