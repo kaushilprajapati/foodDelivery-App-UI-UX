@@ -227,7 +227,7 @@ background-color: #f3ebebf3;
                             .mainSign {
                                 background-color: white;
                                 width: 400px;
-                                height: 600px;
+                                height: 700px;
                                 margin: 7em auto;
                                 border-radius: 1.5em;
                                 box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
@@ -304,6 +304,81 @@ background-color: #f3ebebf3;
                                 text-align: center;
                                 margin-bottom: 27px;
                                 font-family: 'Ubuntu', sans-serif;
+                            }
+
+                            .radio {
+                              background: #ffffff;
+                              padding: 4px;
+                              width: 76%;
+                              color: rgb(38, 50, 56);
+                              font-weight: 700;
+                              font-size: 14px;
+                              letter-spacing: 1px;
+                              background: rgba(136, 126, 126, 0.04);
+                              padding: 10px 20px;
+                              border: none;
+                              border-radius: 20px;
+                              outline: none;
+                              box-sizing: border-box;
+                              border: 2px solid rgba(0, 0, 0, 0.02);
+                              margin-bottom: 50px;
+                              margin-left: 46px;
+                              text-align: center;
+                              margin-bottom: 27px;
+                              font-family: 'Ubuntu', sans-serif;
+                              position: relative;
+                              text-align: center;
+                            }
+                            
+                            .radio input {
+                              width: auto;
+                              height: 100%;
+                              appearance: none;
+                              outline: none;
+                              cursor: pointer;
+                              border-radius: 2px;
+                              padding: 4px 8px;
+                              background: #454857;
+                              color: #bdbdbdbd;
+                              font-size: 14px;
+                              font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                                "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+                                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                              transition: all 100ms linear;
+                            }
+                            
+                            .radio input:checked {
+                              background-image: linear-gradient(180deg, #e04c44, #c88585);
+                              color: #fff;
+                              box-shadow: 0 1px 1px #0000002e;
+                              text-shadow: 0 1px 0px #79485f7a;
+                            }
+                            
+                            .radio input:before {
+                              content: attr(label);
+                              display: inline-block;
+                              text-align: center;
+                              width: 100%;
+                            }
+
+                            .dob{
+                              width: 76%;
+                              color: rgb(38, 50, 56);
+                              font-weight: 700;
+                              font-size: 14px;
+                              letter-spacing: 1px;
+                              background: rgba(136, 126, 126, 0.04);
+                              padding: 10px 20px;
+                              border: none;
+                              border-radius: 20px;
+                              outline: none;
+                              box-sizing: border-box;
+                              border: 2px solid rgba(0, 0, 0, 0.02);
+                              margin-bottom: 50px;
+                              margin-left: 46px;
+                              text-align: center;
+                              margin-bottom: 27px;
+                              font-family: 'Ubuntu', sans-serif;
                             }
                             
                             form.form1 {

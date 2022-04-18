@@ -11,15 +11,21 @@ function store(){
     var email = document.getElementById('email');
     var pw = document.getElementById('pw');
     var cpw = document.getElementById('cpw');
+    var ele = document.getElementsByName('gender');
+           
+    var dob = document.getElementById('dob');
     var lowerCaseLetters = /[a-z]/g;
     var upperCaseLetters = /[A-Z]/g;
     var numbers = /[0-9]/g;
 
-    if(username.value.length == 0){
-        alert('Please fill in username');
+    if(name.value.length == 0){
+        alert('Please fill in Name');
     }else if(pw.value.length == 0){
         alert('Please fill in password');
-    }else if(pw.value.length > 8){
+    }else if(username.value.length == 0){
+        alert('Please fill in username');
+    }
+    else if(pw.value.length > 8){
         alert('Maximum of 8 digits for password');
     }else if(!pw.value.match(numbers)){
         alert('please add 1 number');
@@ -35,6 +41,11 @@ function store(){
         localStorage.setItem('username', username.value);
         localStorage.setItem('pw', pw.value);
         localStorage.setItem('email', email.value);
+        localStorage.setItem('dob', dob.value);
+        for(i = 0; i < ele.length; i++) {
+            if(ele[i].checked)
+                    localStorage.setItem('gender', ele[i].value);
+        }
         alert('Your account has been created');
     }
 }

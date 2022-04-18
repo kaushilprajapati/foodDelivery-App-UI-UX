@@ -33,6 +33,14 @@
             <input class="Name" type="text" placeholder="Name" id="name" required>
             <input class="un " type="text" placeholder="Username" id="username" required>
             <input class="Email" type="text" placeholder="Email" id="email" required>
+            <div class="radio">
+              <input label="Male" type="radio" id="male" name="gender" value="male" checked>
+              <input label="Female" type="radio" id="female" name="gender" value="female">
+              <input label="Others" type="radio" id="other" name="gender" value="other">
+            </div>
+            <div class = "dob">
+            Date of Birth: <input type="date" data-date-inline-picker="true" id = "dob" required/>
+            </div>
             <input class="pass" type="password" placeholder="Password" id="pw" required>
             <input class="Conpass" type="password" placeholder="Confirm-Password" id="cpw" required>
             <input type="button" value="Register" class="submit" onclick="store()">
