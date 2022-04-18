@@ -17,7 +17,7 @@ function store(){
     var lowerCaseLetters = /[a-z]/g;
     var upperCaseLetters = /[A-Z]/g;
     var numbers = /[0-9]/g;
-
+    
     if(name.value.length == 0){
         alert('Please fill in Name');
     }else if(pw.value.length == 0){
@@ -27,16 +27,21 @@ function store(){
     }
     else if(pw.value.length > 8){
         alert('Maximum of 8 digits for password');
-    }else if(!pw.value.match(numbers)){
-        alert('please add 1 number');
+    }else if(pw.value.length < 6){
+        alert('Minimum of 6 digits for password');
+    }
+    else if(!pw.value.match(numbers)){
+        alert('please add 1 number in the password');
     }else if(!pw.value.match(upperCaseLetters)){
-        alert('please add 1 uppercase letter');
+        alert('please add 1 uppercase letter in the password');
     }else if(!pw.value.match(lowerCaseLetters)){
-        alert('please add 1 lowercase letter');
+        alert('please add 1 lowercase letter in the password');
     }else if(pw.value != cpw.value){
         alert('Confirm password and password has to be same');
     }
     else{
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+        {
         localStorage.setItem('name', name.value);
         localStorage.setItem('username', username.value);
         localStorage.setItem('pw', pw.value);
@@ -47,9 +52,14 @@ function store(){
                     localStorage.setItem('gender', ele[i].value);
         }
         alert('Your account has been created');
+        }
+    else{
+      alert("You have entered an invalid email address!")
+        }
     }
-}
+        }   
 
-function clearAll(){
+function clearAll()
+{
    document.getElementById("signup").reset();
 }

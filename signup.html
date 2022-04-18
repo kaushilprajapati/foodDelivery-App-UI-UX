@@ -32,7 +32,7 @@
         <form class="form1" id="signup">
             <input class="Name" type="text" placeholder="Name" id="name" required>
             <input class="un " type="text" placeholder="Username" id="username" required>
-            <input class="Email" type="text" placeholder="Email" id="email" required>
+            <input class="Email" type="email" placeholder="Email" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
             <div class="radio">
               <input label="Male" type="radio" id="male" name="gender" value="male" checked>
               <input label="Female" type="radio" id="female" name="gender" value="female">
