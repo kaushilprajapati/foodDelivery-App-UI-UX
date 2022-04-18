@@ -31,6 +31,9 @@
     scroll-padding-top: 6rem;
   }
   body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Nunito', sans-serif;
     background-color: #f7f7f7;
   }
@@ -548,10 +551,28 @@ header #menu-bar{
     border-left: .5rem solid var(--red);
     background-color: #fff;
   }
+  .footer{
+    margin-top: auto;
+    position: sticky;
+  }
 }
 @media (max-width:450px) {
   .order .row form .inputBox input{
     width: 100%;
+  }
+}
+
+@media (max-width: 1440px){
+  .footer{
+    margin-top: auto;
+    position: sticky;
+  }
+}
+
+@media (min-width:1910px) {
+  .footer{
+    margin-top: auto;
+    position: sticky;
   }
 }
 /* media queries end */

@@ -30,10 +30,6 @@
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
   }
-  body{
-    font-family: 'Nunito', sans-serif;
-    background-color: #f7f7f7;
-  }
   section{
     padding: 2rem 9% ;
   }
@@ -132,7 +128,35 @@ header{
   }
   /*header end*/
 
-/*header media queries*/
+  /*footer start*/
+.footer{
+  margin-top: auto;
+  background-color: #000;
+  text-align: center;
+}
+.footer .share{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .credit{
+  padding: 2.5rem 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.footer .credit span{
+  color: var(--red);
+}
+.filler{
+height: 200px;
+width: 100%;
+background-color: #f3ebebf3;
+}
+/*footer end*/
+
+/*header & footer media queries*/
   @media (max-width:768px) {
     header #menu-bar{
       display: initial;
@@ -167,10 +191,25 @@ header{
       background-color: #fff;
     }
   }
+  @media (min-width:1910px) {
+    .footer{
+      bottom: 0;
+      margin-top: auto;
+      position: sticky;
+    }
+    .filler{
+      height: 300px;
+      width: 100%;
+      }
+
+  }
 
   /* login-signup css */
 
                            body {
+                                min-height: 100vh;
+                                display: flex;
+                                flex-direction: column;
                                 background-color: #f3ebebf3;
                                 font-family: 'Ubuntu', sans-serif;
                                 padding-top: 100px;
@@ -184,7 +223,7 @@ header{
                                 border-radius: 1.5em;
                                 box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
                             }
-                            
+                          
                             .mainSign {
                                 background-color: white;
                                 width: 400px;
