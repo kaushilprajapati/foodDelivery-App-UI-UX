@@ -433,6 +433,11 @@ header #menu-bar{
   color: #eee;
   padding:1rem ;
 }
+.filler{
+  height: 200px;
+  width: 100%;
+  background-color: #f7f7f7;
+  }
 /* review end */
 
 /* ordernow start */
@@ -497,6 +502,11 @@ header #menu-bar{
 .order .row form .btn:hover{
   background-color: var(--red);
 }
+.filler{
+  height: 200px;
+  width: 100%;
+  background-color: #f7f7f7;
+  }
 /* ordernow end */
 
 /* media queries start */
