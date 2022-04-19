@@ -38,6 +38,8 @@ function store(){
         alert('please add 1 lowercase letter in the password');
     }else if(pw.value != cpw.value){
         alert('Confirm password and password has to be same');
+    }else if(/^[a-zA-Z ]+$/.test(name.value)!=true){
+        alert('Name is not valid it should not include numbers');
     }
     else{
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))

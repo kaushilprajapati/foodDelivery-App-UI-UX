@@ -35,21 +35,21 @@
           </div>
           <form action="">
             <div class="inputBox">
-              <input type="text" placeholder="name">
-              <input type="email" placeholder="email">
+              <input type="text" placeholder="name" id="name" required>
+              <input type="email" placeholder="email" id="email" required>
             </div>
     
             <div class="inputBox">
-              <input type="number" placeholder="number">
-              <input type="text" placeholder="food name">
+              <input type="number" placeholder="number" id="number" required>
+              <input type="text" placeholder="food name" id="foodname" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="address"></textarea>
-            <input type="submit" value="order now" class="btn">
+            <textarea name="" id="" cols="30" rows="10" placeholder="address" id="address" required></textarea>
+            <input type="submit" value="order now" class="btn" onclick="order()" required>
           </form>
         </div>
       </section>
       <section class="footer">
         <h1 class="credit">Created by <span>Rapid Chidori</span> | &copy; All Rights Reserved</h1>
       </section>
-      <script src="js/others.js"></script>
+      <script src="js/ordernow.js"></script>
 </body>
