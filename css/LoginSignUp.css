@@ -152,7 +152,7 @@ header{
 .filler{
 height: 200px;
 width: 100%;
-background-color: #f3ebebf3;
+background-color: #f7f7f7;
 }
 /*footer end*/
 
@@ -210,7 +210,7 @@ background-color: #f3ebebf3;
                                 min-height: 100vh;
                                 display: flex;
                                 flex-direction: column;
-                                background-color: #f3ebebf3;
+                                background-color: #f7f7f7;
                                 font-family: 'Ubuntu', sans-serif;
                                 padding-top: 100px;
                             }
@@ -244,6 +244,7 @@ background-color: #f3ebebf3;
                             
                             .forgot {
                                 padding-left: 50px;
+                                font-size: 12px;
                             }
                             
                             .un {
